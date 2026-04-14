@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Promise Verse | Department Fellowship</title>
+    <title>Your Promise Verse | Department Fellowship 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * {
@@ -11,7 +11,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -22,13 +21,11 @@
             padding: 20px;
             overflow-x: hidden;
         }
-
         .container {
             width: 100%;
-            max-width: 450px;
+            max-width: 460px;
             position: relative;
         }
-
         .card {
             background: white;
             border-radius: 24px;
@@ -38,18 +35,10 @@
             overflow: hidden;
             animation: cardEntry 0.6s ease-out;
         }
-
         @keyframes cardEntry {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
+            from { opacity: 0; transform: translateY(30px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
         }
-
         .card::before {
             content: '';
             position: absolute;
@@ -59,114 +48,102 @@
             height: 5px;
             background: linear-gradient(90deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
         }
-
         .header {
             text-align: center;
             margin-bottom: 30px;
         }
-
         .logo-icon {
-            width: 60px;
-            height: 60px;
+            width: 64px;
+            height: 64px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 15px;
-            font-size: 28px;
+            font-size: 32px;
             color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
         }
-
         .header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 1.85rem;
             color: #1a1a2e;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
             font-weight: 600;
         }
-
         .header p {
             color: #666;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: 300;
         }
-
         .verse-container {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             border-radius: 20px;
-            padding: 30px 25px;
+            padding: 32px 28px;
             margin-bottom: 25px;
             position: relative;
-            border-left: 4px solid #667eea;
+            border-left: 5px solid #667eea;
         }
-
         .quote-icon {
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: #667eea;
-            opacity: 0.3;
+            opacity: 0.15;
             position: absolute;
-            top: 10px;
-            left: 15px;
+            top: 15px;
+            left: 20px;
             font-family: Georgia, serif;
             line-height: 1;
         }
-
         .verse-text {
             font-family: 'Playfair Display', serif;
-            font-size: 1.25rem;
-            line-height: 1.6;
+            font-size: 1.28rem;
+            line-height: 1.65;
             color: #2d3748;
             text-align: center;
             position: relative;
             z-index: 1;
             font-style: italic;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
-
         .verse-reference {
             text-align: center;
             color: #667eea;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.98rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.2px;
         }
-
         .meta-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 25px;
-            padding: 0 10px;
+            padding: 0 8px;
         }
-
         .draw-number {
             background: #edf2f7;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.87rem;
             color: #4a5568;
             font-weight: 500;
         }
-
         .timestamp {
-            font-size: 0.8rem;
+            font-size: 0.82rem;
             color: #718096;
         }
-
         .actions {
             display: flex;
             gap: 12px;
             margin-bottom: 20px;
         }
-
         .btn {
             flex: 1;
-            padding: 14px 20px;
+            padding: 15px 20px;
             border: none;
             border-radius: 12px;
-            font-size: 0.95rem;
+            font-size: 0.98rem;
             font-weight: 500;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -175,144 +152,125 @@
             justify-content: center;
             gap: 8px;
         }
-
         .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
-
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px -5px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 12px 25px -5px rgba(102, 126, 234, 0.45);
         }
-
         .btn-secondary {
             background: #edf2f7;
             color: #4a5568;
         }
-
         .btn-secondary:hover {
             background: #e2e8f0;
         }
-
         .history-section {
             margin-top: 25px;
             padding-top: 25px;
             border-top: 1px solid #e2e8f0;
         }
-
         .history-title {
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             color: #4a5568;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             gap: 8px;
         }
-
         .history-list {
-            max-height: 200px;
+            max-height: 210px;
             overflow-y: auto;
         }
-
         .history-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #f0f0f0;
-            font-size: 0.85rem;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.87rem;
         }
-
         .history-item:last-child {
             border-bottom: none;
         }
-
         .history-verse {
             color: #2d3748;
             font-weight: 500;
         }
-
         .history-time {
             color: #a0aec0;
-            font-size: 0.75rem;
+            font-size: 0.78rem;
         }
-
         .stats {
-            background: #f7fafc;
+            background: #f8fafc;
             border-radius: 12px;
-            padding: 15px;
+            padding: 16px;
             margin-top: 20px;
             text-align: center;
-            font-size: 0.85rem;
+            font-size: 0.88rem;
             color: #4a5568;
         }
-
         .stats strong {
             color: #667eea;
         }
-
         .loading {
             display: none;
             text-align: center;
-            padding: 40px;
+            padding: 50px 20px;
         }
-
         .spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid #e2e8f0;
+            width: 42px;
+            height: 42px;
+            border: 4px solid #e2e8f0;
             border-top-color: #667eea;
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin: 0 auto 15px;
+            margin: 0 auto 18px;
         }
-
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-
         .confetti {
             position: fixed;
             width: 10px;
             height: 10px;
-            background: #f5576c;
-            position: absolute;
-            animation: confetti-fall 3s ease-out forwards;
+            border-radius: 2px;
+            z-index: 9999;
+            animation: confetti-fall 3.5s ease-out forwards;
         }
-
         @keyframes confetti-fall {
-            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(500px) rotate(720deg); opacity: 0; }
+            0% { transform: translateY(-150px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(600px) rotate(720deg); opacity: 0; }
         }
-
-        @media (max-width: 480px) {
-            .card {
-                padding: 30px 20px;
-            }
-            .verse-text {
-                font-size: 1.1rem;
-            }
-        }
-
         .toast {
             position: fixed;
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%) translateY(100px);
-            background: #2d3748;
+            background: #1f2937;
             color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-size: 0.9rem;
+            padding: 14px 26px;
+            border-radius: 10px;
+            font-size: 0.95rem;
             opacity: 0;
-            transition: all 0.3s ease;
-            z-index: 1000;
+            transition: all 0.4s ease;
+            z-index: 10000;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
         }
-
         .toast.show {
             transform: translateX(-50%) translateY(0);
             opacity: 1;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 32px 22px;
+            }
+            .verse-text {
+                font-size: 1.15rem;
+            }
         }
     </style>
 </head>
@@ -327,12 +285,12 @@
 
             <div class="loading" id="loading">
                 <div class="spinner"></div>
-                <p style="color: #666; font-size: 0.9rem;">Receiving your promise...</p>
+                <p style="color: #666; font-size: 0.95rem;">Receiving your promise...</p>
             </div>
 
             <div id="content" style="display: none;">
                 <div class="verse-container">
-                    <div class="quote-icon">"</div>
+                    <div class="quote-icon">“</div>
                     <div class="verse-text" id="verseText"></div>
                     <div class="verse-reference" id="verseRef"></div>
                 </div>
@@ -368,7 +326,7 @@
     <div class="toast" id="toast"></div>
 
     <script>
-        // Curated Promise Verses (100+ verses)
+        // Cleaned and deduplicated Promise Verses (High Quality)
         const promiseVerses = [
             { text: "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.", reference: "Jeremiah 29:11" },
             { text: "I can do all things through Christ who strengthens me.", reference: "Philippians 4:13" },
@@ -377,117 +335,29 @@
             { text: "The Lord is my light and my salvation—whom shall I fear?", reference: "Psalm 27:1" },
             { text: "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.", reference: "Romans 8:28" },
             { text: "But seek first his kingdom and his righteousness, and all these things will be given to you as well.", reference: "Matthew 6:33" },
-            { text: "The name of the Lord is a fortified tower; the righteous run to it and are safe.", reference: "Proverbs 18:10" },
             { text: "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.", reference: "Joshua 1:9" },
             { text: "Cast all your anxiety on him because he cares for you.", reference: "1 Peter 5:7" },
             { text: "The Lord will fight for you; you need only to be still.", reference: "Exodus 14:14" },
             { text: "Come to me, all you who are weary and burdened, and I will give you rest.", reference: "Matthew 11:28" },
             { text: "Trust in the Lord with all your heart and lean not on your own understanding.", reference: "Proverbs 3:5" },
-            { text: "The Lord is good, a refuge in times of trouble. He cares for those who trust in him.", reference: "Nahum 1:7" },
-            { text: "Be strong and take heart, all you who hope in the Lord.", reference: "Psalm 31:24" },
-            { text: "Now to him who is able to do immeasurably more than all we ask or imagine, according to his power that is at work within us.", reference: "Ephesians 3:20" },
-            { text: "The Lord is my strength and my shield; my heart trusts in him, and he helps me.", reference: "Psalm 28:7" },
-            { text: "Peace I leave with you; my peace I give you. I do not give to you as the world gives.", reference: "John 14:27" },
             { text: "But those who hope in the Lord will renew their strength. They will soar on wings like eagles.", reference: "Isaiah 40:31" },
             { text: "The Lord is close to the brokenhearted and saves those who are crushed in spirit.", reference: "Psalm 34:18" },
-            { text: "No weapon forged against you will prevail, and you will refute every tongue that accuses you.", reference: "Isaiah 54:17" },
             { text: "If God is for us, who can be against us?", reference: "Romans 8:31" },
-            { text: "The Lord will keep you from all harm—he will watch over your life.", reference: "Psalm 121:7" },
-            { text: "Delight yourself in the Lord, and he will give you the desires of your heart.", reference: "Psalm 37:4" },
             { text: "I will never leave you nor forsake you.", reference: "Hebrews 13:5" },
             { text: "The joy of the Lord is your strength.", reference: "Nehemiah 8:10" },
             { text: "For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline.", reference: "2 Timothy 1:7" },
-            { text: "But he said to me, 'My grace is sufficient for you, for my power is made perfect in weakness.'", reference: "2 Corinthians 12:9" },
-            { text: "The Lord is my portion; therefore I will wait for him.", reference: "Lamentations 3:24" },
+            { text: "My grace is sufficient for you, for my power is made perfect in weakness.", reference: "2 Corinthians 12:9" },
             { text: "You will keep in perfect peace those whose minds are steadfast, because they trust in you.", reference: "Isaiah 26:3" },
-            { text: "Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here!", reference: "2 Corinthians 5:17" },
-            { text: "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, will be able to separate us from the love of God.", reference: "Romans 8:38-39" },
             { text: "The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you.", reference: "Zephaniah 3:17" },
-            { text: "Call to me and I will answer you and tell you great and unsearchable things you do not know.", reference: "Jeremiah 33:3" },
             { text: "He gives strength to the weary and increases the power of the weak.", reference: "Isaiah 40:29" },
-            { text: "The Lord is righteous in all his ways and faithful in all he does.", reference: "Psalm 145:17" },
             { text: "Your word is a lamp for my feet, a light on my path.", reference: "Psalm 119:105" },
-            { text: "Commit to the Lord whatever you do, and he will establish your plans.", reference: "Proverbs 16:3" },
             { text: "Even though I walk through the darkest valley, I will fear no evil, for you are with me.", reference: "Psalm 23:4" },
-            { text: "The Lord is gracious and righteous; our God is full of compassion.", reference: "Psalm 116:5" },
-            { text: "In all your ways submit to him, and he will make your paths straight.", reference: "Proverbs 3:6" },
-            { text: "Wait for the Lord; be strong and take heart and wait for the Lord.", reference: "Psalm 27:14" },
-            { text: "Blessed is the one who trusts in the Lord, whose confidence is in him.", reference: "Jeremiah 17:7" },
-            { text: "The Lord will guide you always; he will satisfy your needs in a sun-scorched land.", reference: "Isaiah 58:11" },
             { text: "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.", reference: "Philippians 4:6" },
             { text: "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.", reference: "Philippians 4:7" },
-            { text: "This is the confidence we have in approaching God: that if we ask anything according to his will, he hears us.", reference: "1 John 5:14" },
-            { text: "For the Lord takes delight in his people; he crowns the humble with victory.", reference: "Psalm 149:4" },
-            { text: "The Lord is compassionate and gracious, slow to anger, abounding in love.", reference: "Psalm 103:8" },
-            { text: "As far as the east is from the west, so far has he removed our transgressions from us.", reference: "Psalm 103:12" },
             { text: "He heals the brokenhearted and binds up their wounds.", reference: "Psalm 147:3" },
-            { text: "Great is our Lord and mighty in power; his understanding has no limit.", reference: "Psalm 147:5" },
-            { text: "The Lord supports the humble but brings the wicked down to the ground.", reference: "Psalm 147:6" },
             { text: "He will cover you with his feathers, and under his wings you will find refuge.", reference: "Psalm 91:4" },
-            { text: "His faithfulness will be your shield and rampart.", reference: "Psalm 91:4" },
-            { text: "You will not fear the terror of night, nor the arrow that flies by day.", reference: "Psalm 91:5" },
-            { text: "Because he loves me, says the Lord, I will rescue him; I will protect him, for he acknowledges my name.", reference: "Psalm 91:14" },
-            { text: "He will call on me, and I will answer him; I will be with him in trouble.", reference: "Psalm 91:15" },
-            { text: "With long life I will satisfy him and show him my salvation.", reference: "Psalm 91:16" },
-            { text: "Surely goodness and mercy shall follow me all the days of my life.", reference: "Psalm 23:6" },
-            { text: "And I will dwell in the house of the Lord forever.", reference: "Psalm 23:6" },
             { text: "Taste and see that the Lord is good; blessed is the one who takes refuge in him.", reference: "Psalm 34:8" },
-            { text: "Fear the Lord, you his holy people, for those who fear him lack nothing.", reference: "Psalm 34:9" },
-            { text: "The lions may grow weak and hungry, but those who seek the Lord lack no good thing.", reference: "Psalm 34:10" },
-            { text: "I sought the Lord, and he answered me; he delivered me from all my fears.", reference: "Psalm 34:4" },
-            { text: "Those who look to him are radiant; their faces are never covered with shame.", reference: "Psalm 34:5" },
-            { text: "This poor man called, and the Lord heard him; he saved him out of all his troubles.", reference: "Psalm 34:6" },
-            { text: "The angel of the Lord encamps around those who fear him, and he delivers them.", reference: "Psalm 34:7" },
-            { text: "How abundant are the good things that you have stored up for those who fear you.", reference: "Psalm 31:19" },
-            { text: "In the shelter of your presence you hide them from all human intrigues.", reference: "Psalm 31:20" },
-            { text: "Praise be to the Lord, for he showed me the wonders of his love when I was in a city under siege.", reference: "Psalm 31:21" },
-            { text: "In my alarm I said, 'I am cut off from your sight!' Yet you heard my cry for mercy when I called to you for help.", reference: "Psalm 31:22" },
-            { text: "Love the Lord, all his faithful people! The Lord preserves those who are true to him.", reference: "Psalm 31:23" },
-            { text: "Be strong and take heart, all you who hope in the Lord.", reference: "Psalm 31:24" },
-            { text: "Blessed is the one whose transgressions are forgiven, whose sins are covered.", reference: "Psalm 32:1" },
-            { text: "Blessed is the one whose sin the Lord does not count against them and in whose spirit is no deceit.", reference: "Psalm 32:2" },
-            { text: "Therefore let all the faithful pray to you while you may be found.", reference: "Psalm 32:6" },
-            { text: "You are my hiding place; you will protect me from trouble and surround me with songs of deliverance.", reference: "Psalm 32:7" },
-            { text: "I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you.", reference: "Psalm 32:8" },
-            { text: "Do not be like the horse or the mule, which have no understanding but must be controlled by bit and bridle.", reference: "Psalm 32:9" },
-            { text: "Many are the woes of the wicked, but the Lord's unfailing love surrounds the one who trusts in him.", reference: "Psalm 32:10" },
-            { text: "Rejoice in the Lord and be glad, you righteous; sing, all you who are upright in heart!", reference: "Psalm 32:11" },
-            { text: "Sing the praises of the Lord, you his faithful people; praise his holy name.", reference: "Psalm 30:4" },
-            { text: "For his anger lasts only a moment, but his favor lasts a lifetime; weeping may stay for the night, but rejoicing comes in the morning.", reference: "Psalm 30:5" },
-            { text: "You turned my wailing into dancing; you removed my sackcloth and clothed me with joy.", reference: "Psalm 30:11" },
-            { text: "That my heart may sing your praises and not be silent. Lord my God, I will praise you forever.", reference: "Psalm 30:12" },
-            { text: "The Lord sits enthroned over the flood; the Lord is enthroned as King forever.", reference: "Psalm 29:10" },
-            { text: "The Lord gives strength to his people; the Lord blesses his people with peace.", reference: "Psalm 29:11" },
-            { text: "The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge.", reference: "Psalm 18:2" },
-            { text: "I called to the Lord, who is worthy of praise, and I have been saved from my enemies.", reference: "Psalm 18:3" },
-            { text: "The cords of death entangled me; the torrents of destruction overwhelmed me.", reference: "Psalm 18:4" },
-            { text: "In my distress I called to the Lord; I cried to my God for help. From his temple he heard my voice.", reference: "Psalm 18:6" },
-            { text: "He reached down from on high and took hold of me; he drew me out of deep waters.", reference: "Psalm 18:16" },
-            { text: "He rescued me from my powerful enemy, from my foes, who were too strong for me.", reference: "Psalm 18:17" },
-            { text: "He brought me out into a spacious place; he rescued me because he delighted in me.", reference: "Psalm 18:19" },
-            { text: "The Lord has dealt with me according to my righteousness; according to the cleanness of my hands he has rewarded me.", reference: "Psalm 18:20" },
-            { text: "To the faithful you show yourself faithful, to the blameless you show yourself blameless.", reference: "Psalm 18:25" },
-            { text: "You, Lord, keep my lamp burning; my God turns my darkness into light.", reference: "Psalm 18:28" },
-            { text: "With your help I can advance against a troop; with my God I can scale a wall.", reference: "Psalm 18:29" },
-            { text: "As for God, his way is perfect: The Lord's word is flawless; he shields all who take refuge in him.", reference: "Psalm 18:30" },
-            { text: "Who is God besides the Lord? And who is the Rock except our God?", reference: "Psalm 18:31" },
-            { text: "It is God who arms me with strength and keeps my way secure.", reference: "Psalm 18:32" },
-            { text: "He makes my feet like the feet of a deer; he causes me to stand on the heights.", reference: "Psalm 18:33" },
-            { text: "You give me your shield of victory, and your right hand sustains me; your help has made me great.", reference: "Psalm 18:35" },
-            { text: "You provide a broad path for my feet, so that my ankles do not give way.", reference: "Psalm 18:36" },
-            { text: "I pursued my enemies and overtook them; I did not turn back till they were destroyed.", reference: "Psalm 18:37" },
-            { text: "You armed me with strength for battle; you humbled my adversaries before me.", reference: "Psalm 18:39" },
-            { text: "You made my enemies turn their backs in flight, and I destroyed my foes.", reference: "Psalm 18:40" },
-            { text: "They cried for help, but there was no one to save them—to the Lord, but he did not answer.", reference: "Psalm 18:41" },
-            { text: "I beat them as fine as windblown dust; I trampled them like mud in the streets.", reference: "Psalm 18:42" },
-            { text: "You have delivered me from the attacks of the people; you have made me the head of nations.", reference: "Psalm 18:43" },
-            { text: "Foreigners cower before me; as soon as they hear of me, they obey me.", reference: "Psalm 18:44" },
-            { text: "They all lose heart; they come trembling from their strongholds.", reference: "Psalm 18:45" },
-            { text: "The Lord lives! Praise be to my Rock! Exalted be God my Savior!", reference: "Psalm 18:46" },
-            { text: "He is the God who avenges me, who subdues nations under me.", reference: "Psalm 18:47" },
-            { text: "He saves me from my enemies. You exalted me above my foes; from a violent man you rescued me.", reference: "Psalm 18:48" },
-            { text: "Therefore I will praise you, Lord, among the nations; I will sing the praises of your name.", reference: "Psalm 18:49" },
-            { text: "He gives his king great victories; he shows unfailing love to his anointed.", reference: "Psalm 18:50" }
+            { text: "The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge.", reference: "Psalm 18:2" }
         ];
 
         let currentVerse = null;
@@ -500,81 +370,83 @@
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('content').style.display = 'block';
                 drawNewVerse();
-            }, 1500);
+            }, 1200);
         };
 
         function getRandomVerse() {
-            // Get available verses (not in history)
-            const availableVerses = promiseVerses.filter(v => 
+            let availableVerses = promiseVerses.filter(v => 
                 !drawHistory.some(h => h.reference === v.reference)
             );
-            
-            // If all verses used, reset history
+
+            // Reset history if all verses have been used
             if (availableVerses.length === 0) {
                 drawHistory = [];
                 localStorage.setItem('promiseDraws', '[]');
-                return promiseVerses[Math.floor(Math.random() * promiseVerses.length)];
+                availableVerses = [...promiseVerses];
             }
-            
+
             return availableVerses[Math.floor(Math.random() * availableVerses.length)];
         }
 
         function drawNewVerse() {
             currentVerse = getRandomVerse();
             globalDrawCount++;
-            
-            // Update display
+
+            // Update UI
             document.getElementById('verseText').textContent = currentVerse.text;
             document.getElementById('verseRef').textContent = currentVerse.reference;
             document.getElementById('drawNumber').textContent = `Draw #${globalDrawCount}`;
-            document.getElementById('timestamp').textContent = new Date().toLocaleString();
+            document.getElementById('timestamp').textContent = new Date().toLocaleString('en-IN');
             document.getElementById('uniqueCount').textContent = globalDrawCount;
-            
+
             // Save to history
             const drawRecord = {
                 ...currentVerse,
                 timestamp: new Date().toISOString(),
                 drawNumber: globalDrawCount
             };
+
             drawHistory.unshift(drawRecord);
             localStorage.setItem('promiseDraws', JSON.stringify(drawHistory));
             localStorage.setItem('globalDrawCount', globalDrawCount.toString());
-            
-            // Update history display
+
             updateHistory();
-            
-            // Animation effect
             createConfetti();
         }
 
         function updateHistory() {
             const historySection = document.getElementById('historySection');
             const historyList = document.getElementById('historyList');
-            
+
             if (drawHistory.length > 1) {
                 historySection.style.display = 'block';
                 historyList.innerHTML = drawHistory.slice(1).map(h => `
                     <div class="history-item">
                         <span class="history-verse">${h.reference}</span>
-                        <span class="history-time">${new Date(h.timestamp).toLocaleTimeString()}</span>
+                        <span class="history-time">${new Date(h.timestamp).toLocaleTimeString('en-IN')}</span>
                     </div>
                 `).join('');
+            } else {
+                historySection.style.display = 'none';
             }
         }
 
         function shareVerse() {
-            const shareText = `"${currentVerse.text}" - ${currentVerse.reference}`;
-            
+            if (!currentVerse) return;
+
+            const shareText = `"${currentVerse.text}" — ${currentVerse.reference}\n\nDepartment Fellowship 2026`;
+
             if (navigator.share) {
                 navigator.share({
                     title: 'My Promise Verse',
                     text: shareText,
                     url: window.location.href
-                }).catch(err => console.log('Share cancelled'));
+                }).catch(() => {});
             } else {
-                // Fallback: Copy to clipboard
                 navigator.clipboard.writeText(shareText).then(() => {
                     showToast('Verse copied to clipboard!');
+                }).catch(() => {
+                    showToast('Failed to copy verse');
                 });
             }
         }
@@ -583,27 +455,26 @@
             const toast = document.getElementById('toast');
             toast.textContent = message;
             toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 3000);
+            setTimeout(() => toast.classList.remove('show'), 2800);
         }
 
         function createConfetti() {
-            const colors = ['#f5576c', '#4facfe', '#667eea', '#f093fb', '#43e97b'];
-            for (let i = 0; i < 20; i++) {
+            const colors = ['#f5576c', '#4facfe', '#667eea', '#f093fb', '#43e97b', '#ffd93d'];
+            for (let i = 0; i < 25; i++) {
                 setTimeout(() => {
                     const confetti = document.createElement('div');
                     confetti.className = 'confetti';
                     confetti.style.left = Math.random() * 100 + '%';
                     confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
-                    confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                    confetti.style.width = Math.random() * 8 + 6 + 'px';
+                    confetti.style.height = confetti.style.width;
+                    confetti.style.animationDuration = (Math.random() * 2 + 2.5) + 's';
+                    confetti.style.opacity = Math.random() * 0.8 + 0.6;
                     document.body.appendChild(confetti);
-                    setTimeout(() => confetti.remove(), 4000);
-                }, i * 50);
-            }
-        }
 
-        // Service Worker for offline support (optional enhancement)
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('data:text/javascript,').catch(() => {});
+                    setTimeout(() => confetti.remove(), 4500);
+                }, i * 35);
+            }
         }
     </script>
 </body>
